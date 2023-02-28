@@ -14,7 +14,7 @@
 }
 
 html {
-  font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%; /* 1rem = 1rem */
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -39,7 +39,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* A elements that don't have a class get default styles */
@@ -75,18 +75,11 @@ picture {
   display: none;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-}
-
 .container {
-  max-width: 500px;
-  margin: 30px auto;
+  height: 100%;
+  margin: 0 auto;
   overflow: auto;
-  min-height: 300px;
-  border: 1px solid steelblue;
-  padding: 30px;
-  border-radius: 5px;
+  min-height: 30rem;
 }
 
 .btn {
@@ -94,7 +87,7 @@ body {
   background: #000;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   margin: 5px;
   border-radius: 5px;
   cursor: pointer;
@@ -117,7 +110,7 @@ body {
 }
 
 .form-control {
-  margin: 20px 0;
+  margin: 2rem 0;
 }
 
 .form-control label {
@@ -126,10 +119,10 @@ body {
 
 .form-control input {
   width: 100%;
-  height: 40px;
+  height: 4rem;
   margin: 5px;
   padding: 3px 7px;
-  font-size: 17px;
+  font-size: 1.7rem;
 }
 
 .form-control-check {
@@ -144,5 +137,5 @@ body {
 
 .form-control-check input {
   flex: 2;
-  height: 20px;
+  height: 2rem;
 }
