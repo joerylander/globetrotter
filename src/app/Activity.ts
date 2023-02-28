@@ -1,8 +1,8 @@
 export interface Activity {
   id?: number;
   name: string;
-  to: number;
-  from: number;
+  to: string;
+  from: string;
   price: number;
   complete: boolean;
   description?: string;

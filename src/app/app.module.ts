@@ -13,9 +13,11 @@ import { TaskItemComponent } from './components/task-item/task-item.component';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 import { AboutComponent } from './pages/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ActivitiesComponent } from './components/activities/activities.component';
+import { ActivityCardComponent } from './components/activity-card/activity-card.component';
 
 const appRoutes: Routes = [
-  { path: '', component: TasksComponent },
+  { path: '', component: ActivitiesComponent },
   { path: 'about', component: AboutComponent },
 ];
 
@@ -29,6 +31,8 @@ const appRoutes: Routes = [
     AddTaskComponent,
     AboutComponent,
     FooterComponent,
+    ActivitiesComponent,
+    ActivityCardComponent,
   ],
   imports: [
     BrowserModule,
