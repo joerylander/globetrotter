@@ -5,6 +5,6 @@ export interface Activity {
   from: string;
   price: number;
   complete: boolean;
-  description?: string;
+  notes: string;
   numOfPpl: number;
 }

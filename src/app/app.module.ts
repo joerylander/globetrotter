@@ -11,10 +11,10 @@ import { ButtonComponent } from './components/button/button.component';
 import { TasksComponent } from './components/tasks/tasks.component';
 import { TaskItemComponent } from './components/task-item/task-item.component';
 import { AddTaskComponent } from './components/add-task/add-task.component';
-import { AboutComponent } from './pages/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ActivitiesComponent } from './components/activities/activities.component';
 import { ActivityCardComponent } from './components/activity-card/activity-card.component';
+import { AboutComponent } from './pages/about/about.component';
 
 const appRoutes: Routes = [
   { path: '', component: ActivitiesComponent },
@@ -39,7 +39,7 @@ const appRoutes: Routes = [
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes, { enableTracing: true }),
+    RouterModule.forRoot(appRoutes, { enableTracing: false }),
   ],
   providers: [],
   bootstrap: [AppComponent],

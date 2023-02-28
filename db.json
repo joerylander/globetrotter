@@ -39,7 +39,7 @@
       "to": "17:00",
       "price": 100,
       "complete": false,
-      "description": "snowboarding",
+      "notes": "snowboarding",
       "numOfPpl": 3
     },
     {
@@ -49,7 +49,7 @@
       "to": "18:00",
       "price": 300,
       "complete": false,
-      "description": "",
+      "notes": "",
       "numOfPpl": 4
     },
     {
@@ -59,7 +59,7 @@
       "to": "11:30",
       "price": 20,
       "complete": false,
-      "description": "",
+      "notes": "",
       "numOfPpl": 2
     }
   ]
