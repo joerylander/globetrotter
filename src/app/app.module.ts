@@ -15,6 +15,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ActivitiesComponent } from './components/activities/activities.component';
 import { ActivityCardComponent } from './components/activity-card/activity-card.component';
 import { AboutComponent } from './pages/about/about.component';
+import { ActivityFormComponent } from './components/activity-form/activity-form.component';
 
 const appRoutes: Routes = [
   { path: '', component: ActivitiesComponent },
@@ -33,6 +34,7 @@ const appRoutes: Routes = [
     FooterComponent,
     ActivitiesComponent,
     ActivityCardComponent,
+    ActivityFormComponent,
   ],
   imports: [
     BrowserModule,

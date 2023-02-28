@@ -1,6 +1,12 @@
 <main class="main">
-  <app-activity-card
-    *ngFor="let activity of activities"
-    [activity]="activity"
-  ></app-activity-card>
+  <h1 class="main__title">Activities</h1>
+  <section class="main__form">
+    <app-activity-form></app-activity-form>
+  </section>
+  <section class="main__grid">
+    <app-activity-card
+      *ngFor="let activity of activities"
+      [activity]="activity"
+    ></app-activity-card>
+  </section>
 </main>

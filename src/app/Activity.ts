@@ -1,10 +1,10 @@
 export interface Activity {
   id?: number;
   name: string;
-  to: string;
   from: string;
+  to: string;
   price: number;
-  complete: boolean;
-  notes: string;
   numOfPpl: number;
+  notes: string;
+  complete?: boolean;
 }

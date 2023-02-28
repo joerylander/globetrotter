@@ -1,6 +1,15 @@
 .main {
   min-height: calc(100vh - 32rem);
   margin: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__title {
+  align-self: center;
+}
+
+.main__grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(auto-fill, 1fr);
