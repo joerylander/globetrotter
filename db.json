@@ -53,14 +53,18 @@
       "numOfPpl": 4
     },
     {
-      "id": 3,
-      "name": "fika time",
-      "from": "11:00",
-      "to": "11:30",
-      "price": 20,
-      "complete": false,
+      "name": "fsa",
+      "numOfPpl": 1,
+      "id": 4
+    },
+    {
+      "name": "ss",
+      "from": "",
+      "to": "",
+      "price": 0,
+      "numOfPpl": 1,
       "notes": "",
-      "numOfPpl": 2
+      "id": 5
     }
   ]
 }

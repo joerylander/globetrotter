@@ -10,9 +10,7 @@ import { Activity } from 'src/app/Activity';
 export class ActivitiesComponent implements OnInit {
   activities: Activity[] = [];
 
-  constructor(private activityService: ActivityService) {
-    console.log(this.activities);
-  }
+  constructor(private activityService: ActivityService) {}
 
   ngOnInit(): void {
     this.activityService
@@ -22,7 +20,13 @@ export class ActivitiesComponent implements OnInit {
 
   addActivity(activity: Activity) {
     this.activityService
-      .addActivities(activity)
+      .addActivity(activity)
       .subscribe((activity) => this.activities.push(activity));
+  }
+
+  deleteActivity(activity: Activity) {
+    this.activityService.deleteActivity(activity).subscribe(() => {
+      this.activities = this.activities.filter((a) => a.id !== activity.id);
+    });
   }
 }
