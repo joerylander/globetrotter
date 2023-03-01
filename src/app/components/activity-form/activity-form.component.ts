@@ -11,7 +11,7 @@ export class ActivityFormComponent implements OnInit {
   name: string;
   from: string;
   to: string;
-  price: number;
+  price: number = 0;
   numOfPpl: number = 1;
   notes: string;
 
@@ -20,6 +20,11 @@ export class ActivityFormComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit() {
+    if (!this.name) {
+      alert('Please add an activity');
+      return;
+    }
+
     const newActivity = {
       name: this.name,
       from: this.from,

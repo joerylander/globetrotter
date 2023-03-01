@@ -1,10 +1,18 @@
 <article class="activity__card">
-  <h2 class="activity__name">{{ activity.name }}</h2>
-  <fa-icon
-    (click)="onDelete(activity)"
-    [ngStyle]="{ color: 'red', cursor: 'pointer' }"
-    [icon]="faTimes"
-  ></fa-icon>
+  <div class="activity__header">
+    <h2 class="activity__name">{{ activity.name }}</h2>
+    <div class="activity__header--icons">
+      <fa-icon
+        [ngStyle]="{ cursor: 'pointer' }"
+        [icon]="faPenToSquare"
+      ></fa-icon>
+      <fa-icon
+        (click)="onDelete(activity)"
+        [ngStyle]="{ color: 'red', cursor: 'pointer' }"
+        [icon]="faTimes"
+      ></fa-icon>
+    </div>
+  </div>
   <div class="activity__item">
     <p class="activity__item--text">From</p>
     <p class="activity__item--text">{{ activity.from }}</p>

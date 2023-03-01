@@ -7,13 +7,25 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.activity__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.activity__header--icons {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
 .activity__name {
   font-size: 1.8rem;
   font-weight: 700;
   font-family: inherit;
   line-height: 2.8rem;
   align-self: center;
-  margin-bottom: 2rem;
+  margin-left: 3rem;
 }
 
 .activity__item {
