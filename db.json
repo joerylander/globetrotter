@@ -56,15 +56,6 @@
       "name": "fsa",
       "numOfPpl": 1,
       "id": 4
-    },
-    {
-      "name": "ss",
-      "from": "",
-      "to": "",
-      "price": 0,
-      "numOfPpl": 1,
-      "notes": "",
-      "id": 5
     }
   ]
 }

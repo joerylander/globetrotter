@@ -17,6 +17,10 @@ export class ActivityCardComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  onEdit(activity: Activity) {
+    console.log('Edit activity: ' + activity);
+  }
+
   onDelete(activity: Activity) {
     this.onDeleteActivity.emit(activity);
   }

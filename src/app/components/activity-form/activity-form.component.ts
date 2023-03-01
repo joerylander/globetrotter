@@ -1,5 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { Activity } from 'src/app/Activity';
+import { UiService } from 'src/app/services/ui.service';
 
 @Component({
   selector: 'app-activity-form',
@@ -14,8 +16,14 @@ export class ActivityFormComponent implements OnInit {
   price: number = 0;
   numOfPpl: number = 1;
   notes: string;
+  showActivityForm: boolean;
+  subscription: Subscription;
 
-  constructor() {}
+  constructor(private uiService: UiService) {
+    this.subscription = this.uiService
+      .onToggle()
+      .subscribe((value) => (this.showActivityForm = value));
+  }
 
   ngOnInit(): void {}
 

@@ -3,6 +3,7 @@
     <h2 class="activity__name">{{ activity.name }}</h2>
     <div class="activity__header--icons">
       <fa-icon
+        (click)="onEdit(activity)"
         [ngStyle]="{ cursor: 'pointer' }"
         [icon]="faPenToSquare"
       ></fa-icon>

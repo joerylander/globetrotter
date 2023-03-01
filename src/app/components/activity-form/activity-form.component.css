@@ -27,3 +27,7 @@
   padding: 2px 7px;
   font-size: 1.7rem;
 }
+
+.form__control input::placeholder {
+  font-style: italic;
+}

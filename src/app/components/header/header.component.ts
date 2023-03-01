@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
   title = 'Globetrotter';
   showAddTask: boolean;
+  showActivityForm: boolean;
   subscription: Subscription;
 
   constructor(private uiService: UiService, private router: Router) {
@@ -20,6 +21,10 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  toggleActivityForm() {
+    this.uiService.toggleActivityForm();
+  }
 
   toggleAddTask() {
     this.uiService.toggleAddTask();

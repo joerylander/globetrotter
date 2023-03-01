@@ -7,8 +7,14 @@ import { Observable, Subject } from 'rxjs';
 export class UiService {
   private showAddTask: boolean = false;
   private subject = new Subject<any>();
+  private showActivityForm: boolean = false;
 
   constructor() {}
+
+  toggleActivityForm(): void {
+    this.showActivityForm = !this.showActivityForm;
+    this.subject.next(this.showActivityForm);
+  }
 
   toggleAddTask(): void {
     this.showAddTask = !this.showAddTask;
