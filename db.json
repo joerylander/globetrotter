@@ -44,18 +44,51 @@
     },
     {
       "id": 2,
-      "name": "hiking in Swedish Lappland",
+      "name": "lkdsngksndgldsg",
       "from": "16:00",
       "to": "18:00",
       "price": 300,
-      "complete": false,
-      "notes": "",
-      "numOfPpl": 4
+      "numOfPpl": 4,
+      "notes": ""
     },
     {
-      "name": "fsa",
+      "id": 3,
+      "name": "sss",
+      "from": "16:00",
+      "to": "18:00",
+      "price": 300,
+      "numOfPpl": 4,
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "name": "aaaaaafsdafdsaf",
+      "price": 0,
+      "numOfPpl": 1
+    },
+    {
+      "id": 5,
+      "name": "sssssssssssss",
+      "from": "xxxxxxxx",
+      "to": "",
+      "price": 0,
       "numOfPpl": 1,
-      "id": 4
+      "notes": ""
+    },
+    {
+      "name": "zxzzxzx",
+      "from": "",
+      "to": "",
+      "price": 0,
+      "numOfPpl": 1,
+      "notes": "",
+      "id": 6
+    },
+    {
+      "name": "Peter Rylander",
+      "price": 0,
+      "numOfPpl": 1,
+      "id": 7
     }
   ]
 }

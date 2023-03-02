@@ -17,8 +17,6 @@ export class UiService {
   toggleActivityForm(): void {
     this.showActivityForm = !this.showActivityForm;
     this.subjectForm.next(this.showActivityForm);
-    console.log('add form: ' + this.showActivityForm);
-    console.log('edit form: ' + this.showEditActivityForm);
   }
 
   onToggleActivityForm(): Observable<any> {
@@ -28,8 +26,6 @@ export class UiService {
   toggleEditActivityForm(): void {
     this.showEditActivityForm = !this.showEditActivityForm;
     this.subjectEdit.next(this.showEditActivityForm);
-    console.log('edit form: ' + this.showEditActivityForm);
-    console.log('add form: ' + this.showActivityForm);
   }
 
   onToggleEditActivityForm(): Observable<any> {

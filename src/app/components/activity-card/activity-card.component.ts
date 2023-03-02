@@ -11,6 +11,7 @@ import { Subscription } from 'rxjs';
 })
 export class ActivityCardComponent implements OnInit {
   @Input() activity: Activity;
+  @Output() onEditBtnClick: EventEmitter<Activity> = new EventEmitter();
   @Output() onDeleteActivity: EventEmitter<Activity> = new EventEmitter();
   faTimes = faTimes;
   faPenToSquare = faPenToSquare;
@@ -26,8 +27,8 @@ export class ActivityCardComponent implements OnInit {
   ngOnInit(): void {}
 
   editForm(activity: Activity) {
-    console.log('Edit activity: ' + activity.id);
     this.uiService.toggleEditActivityForm();
+    this.onEditBtnClick.emit(activity);
   }
 
   onDelete(activity: Activity) {
