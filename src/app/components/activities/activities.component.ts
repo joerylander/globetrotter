@@ -24,6 +24,14 @@ export class ActivitiesComponent implements OnInit {
       .subscribe((activity) => this.activities.push(activity));
   }
 
+  updateActivity(activity: Activity) {
+    this.activityService.updateActivity(activity).subscribe((activity) => {
+      this.activities = this.activities.map((a) =>
+        a.id === activity.id ? activity : a
+      );
+    });
+  }
+
   deleteActivity(activity: Activity) {
     this.activityService.deleteActivity(activity).subscribe(() => {
       this.activities = this.activities.filter((a) => a.id !== activity.id);

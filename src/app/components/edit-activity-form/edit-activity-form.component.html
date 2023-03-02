@@ -1,0 +1,66 @@
+<form
+  *ngIf="showEditActivityForm"
+  class="form__container"
+  (ngSubmit)="onSubmit()"
+>
+  <div class="form__control">
+    <label for="name">Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      [(ngModel)]="activity.name"
+      placeholder="Required..."
+    />
+  </div>
+
+  <div class="form__control">
+    <label for="from">From</label>
+    <input
+      type="text"
+      id="from"
+      name="from"
+      [(ngModel)]="activity.from"
+      placeholder="Optional..."
+    />
+  </div>
+
+  <div class="form__control">
+    <label for="to">To</label>
+    <input
+      type="text"
+      id="to"
+      name="to"
+      [(ngModel)]="activity.to"
+      placeholder="Optional..."
+    />
+  </div>
+
+  <div class="form__control">
+    <label for="price">Price</label>
+    <input type="number" id="price" name="price" [(ngModel)]="activity.price" />
+  </div>
+
+  <div class="form__control">
+    <label for="numOfPpl">Number of People</label>
+    <input
+      type="number"
+      id="numOfPpl"
+      name="numOfPpl"
+      [(ngModel)]="activity.numOfPpl"
+    />
+  </div>
+
+  <div class="form__control">
+    <label for="notes">Notes</label>
+    <input
+      type="text"
+      id="notes"
+      name="notes"
+      [(ngModel)]="activity.notes"
+      placeholder="Optional..."
+    />
+  </div>
+
+  <input type="submit" value="Save activity" class="btn btn-block" />
+</form>

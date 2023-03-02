@@ -21,7 +21,7 @@ export class ActivityFormComponent implements OnInit {
 
   constructor(private uiService: UiService) {
     this.subscription = this.uiService
-      .onToggle()
+      .onToggleActivityForm()
       .subscribe((value) => (this.showActivityForm = value));
   }
 

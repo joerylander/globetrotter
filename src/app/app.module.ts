@@ -16,6 +16,7 @@ import { ActivitiesComponent } from './components/activities/activities.componen
 import { ActivityCardComponent } from './components/activity-card/activity-card.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ActivityFormComponent } from './components/activity-form/activity-form.component';
+import { EditActivityFormComponent } from './components/edit-activity-form/edit-activity-form.component';
 
 const appRoutes: Routes = [
   { path: '', component: ActivitiesComponent },
@@ -35,6 +36,7 @@ const appRoutes: Routes = [
     ActivitiesComponent,
     ActivityCardComponent,
     ActivityFormComponent,
+    EditActivityFormComponent,
   ],
   imports: [
     BrowserModule,
