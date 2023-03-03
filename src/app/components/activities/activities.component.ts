@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivityService } from 'src/app/services/activity.service';
-import { Activity, FormData } from 'src/app/Activity';
+import { Activity } from 'src/app/ActivityTypes';
 
 @Component({
   selector: 'app-activities',

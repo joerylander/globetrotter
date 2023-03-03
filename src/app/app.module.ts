@@ -8,15 +8,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ButtonComponent } from './components/button/button.component';
-import { TasksComponent } from './components/tasks/tasks.component';
-import { TaskItemComponent } from './components/task-item/task-item.component';
-import { AddTaskComponent } from './components/add-task/add-task.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ActivitiesComponent } from './components/activities/activities.component';
 import { ActivityCardComponent } from './components/activity-card/activity-card.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ActivityFormComponent } from './components/activity-form/activity-form.component';
-import { EditActivityFormComponent } from './components/edit-activity-form/edit-activity-form.component';
 
 const appRoutes: Routes = [
   { path: '', component: ActivitiesComponent },
@@ -28,15 +24,11 @@ const appRoutes: Routes = [
     AppComponent,
     HeaderComponent,
     ButtonComponent,
-    TasksComponent,
-    TaskItemComponent,
-    AddTaskComponent,
     AboutComponent,
     FooterComponent,
     ActivitiesComponent,
     ActivityCardComponent,
     ActivityFormComponent,
-    EditActivityFormComponent,
   ],
   imports: [
     BrowserModule,
