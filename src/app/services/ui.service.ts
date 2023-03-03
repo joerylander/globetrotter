@@ -5,12 +5,8 @@ import { Observable, Subject } from 'rxjs';
   providedIn: 'root',
 })
 export class UiService {
-  private showAddTask: boolean = false;
-  private subject = new Subject<any>(); // to be removed
   private subjectForm = new Subject<any>();
-  private subjectEdit = new Subject<any>();
   private showActivityForm: boolean = false;
-  private showEditActivityForm: boolean = false;
 
   constructor() {}
 
@@ -21,25 +17,5 @@ export class UiService {
 
   onToggleActivityForm(): Observable<any> {
     return this.subjectForm.asObservable();
-  }
-
-  toggleEditActivityForm(): void {
-    this.showEditActivityForm = !this.showEditActivityForm;
-    this.subjectEdit.next(this.showEditActivityForm);
-  }
-
-  onToggleEditActivityForm(): Observable<any> {
-    return this.subjectEdit.asObservable();
-  }
-
-  // everything below to be removed
-
-  toggleAddTask(): void {
-    this.showAddTask = !this.showAddTask;
-    this.subject.next(this.showAddTask);
-  }
-
-  onToggle(): Observable<any> {
-    return this.subject.asObservable();
   }
 }

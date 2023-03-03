@@ -10,24 +10,19 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   title = 'Globetrotter';
-  showAddTask: boolean;
   showActivityForm: boolean;
   subscription: Subscription;
 
   constructor(private uiService: UiService, private router: Router) {
     this.subscription = this.uiService
-      .onToggle()
-      .subscribe((value) => (this.showAddTask = value));
+      .onToggleActivityForm()
+      .subscribe((value) => (this.showActivityForm = value));
   }
 
   ngOnInit(): void {}
 
   toggleActivityForm() {
     this.uiService.toggleActivityForm();
-  }
-
-  toggleAddTask() {
-    this.uiService.toggleAddTask();
   }
 
   hasRoute(route: string) {

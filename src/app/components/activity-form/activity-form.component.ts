@@ -8,7 +8,7 @@ import {
   SimpleChanges,
 } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { Activity, FormData } from 'src/app/Activity';
+import { Activity } from 'src/app/ActivityTypes';
 import { UiService } from 'src/app/services/ui.service';
 
 @Component({
@@ -103,7 +103,7 @@ export class ActivityFormComponent implements OnInit, OnChanges {
 
     this.onAddActivity.emit(newActivity);
 
-    // this.showActivityForm = false;
+    this.showActivityForm = false;
     this.name = '';
     this.from = '';
     this.to = '';

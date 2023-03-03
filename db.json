@@ -1,36 +1,4 @@
 {
-  "tasks": [
-    {
-      "id": 1,
-      "text": "Doctors Appointment",
-      "day": "May 5th at 2:30pm",
-      "reminder": true
-    },
-    {
-      "id": 2,
-      "text": "Meeting at School",
-      "day": "May 6th at 2:30pm",
-      "reminder": true
-    },
-    {
-      "id": 3,
-      "text": "Food Shopping",
-      "day": "May 7th at 12:30pm",
-      "reminder": false
-    },
-    {
-      "id": 4,
-      "text": "Food Shopping",
-      "day": "May 7th at 12:30pm",
-      "reminder": false
-    },
-    {
-      "id": 5,
-      "text": "Food Shopping",
-      "day": "May 7th at 12:30pm",
-      "reminder": false
-    }
-  ],
   "activities": [
     {
       "id": 1,
@@ -44,7 +12,7 @@
     },
     {
       "id": 2,
-      "name": "lkdsngksndgldsg",
+      "name": "lkdsngksndgldsgasfzzzzzzzzzz",
       "from": "16:00",
       "to": "18:00",
       "price": 300,
@@ -53,11 +21,11 @@
     },
     {
       "id": 3,
-      "name": "sss",
+      "name": "zzz",
       "from": "16:00",
       "to": "18:00",
       "price": 300,
-      "numOfPpl": 4,
+      "numOfPpl": 9999,
       "notes": ""
     },
     {
@@ -76,19 +44,28 @@
       "notes": ""
     },
     {
-      "name": "zxzzxzx",
+      "id": 6,
+      "name": "hejhejeh",
+      "from": "idag",
+      "to": "imorgon",
+      "price": 200,
+      "numOfPpl": 2,
+      "notes": "nej"
+    },
+    {
+      "name": "3r51dsgfds",
       "from": "",
       "to": "",
       "price": 0,
       "numOfPpl": 1,
       "notes": "",
-      "id": 6
+      "id": 7
     },
     {
-      "name": "Peter Rylander",
+      "name": "33",
       "price": 0,
       "numOfPpl": 1,
-      "id": 7
+      "id": 8
     }
   ]
 }
