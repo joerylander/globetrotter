@@ -103,7 +103,7 @@ export class ActivityFormComponent implements OnInit, OnChanges {
 
     this.onAddActivity.emit(newActivity);
 
-    // this.showActivityForm = false;
+    this.showActivityForm = false;
     this.name = '';
     this.from = '';
     this.to = '';
