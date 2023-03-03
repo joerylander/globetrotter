@@ -4,8 +4,8 @@
   </h1>
   <app-button
     *ngIf="hasRoute('/')"
-    color="{{ showActivityForm ? 'red' : 'green' }}"
-    text="{{ showActivityForm ? 'Close' : 'Add' }}"
+    color="green"
+    text="New activity"
     (btnClick)="toggleActivityForm()"
   ></app-button>
 </header>

@@ -17,19 +17,20 @@ export class ActivityCardComponent implements OnInit {
   faTimes = faTimes;
   faPenToSquare = faPenToSquare;
 
+  showActivityForm: boolean;
   showEditActivityForm: boolean;
   subscription: Subscription;
 
   constructor(private uiService: UiService) {
     this.subscription = this.uiService
-      .onToggleEditActivityForm()
-      .subscribe((value) => (this.showEditActivityForm = value));
+      .onToggleActivityForm()
+      .subscribe((value) => (this.showActivityForm = value));
   }
 
   ngOnInit(): void {}
 
   editForm(activity: Activity) {
-    this.uiService.toggleEditActivityForm();
+    this.uiService.onToggleActivityForm();
     this.onEditBtnClick.emit(activity);
   }
 
