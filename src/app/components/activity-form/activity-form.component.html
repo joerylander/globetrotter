@@ -1,86 +1,11 @@
 <form
   *ngIf="showActivityForm"
-  class="form__container"
   (ngSubmit)="isEditingExistingActivity ? onSubmitEdited() : onSubmit()"
+  class="flex flex-column"
 >
-  <div class="form__control">
-    <label for="name">Name</label>
-    <input
-      type="text"
-      id="name"
-      name="name"
-      [(ngModel)]="name"
-      maxlength="30"
-      placeholder="Required..."
-    />
-  </div>
-
-  <div class="form__control">
-    <label for="from">From</label>
-    <input
-      type="text"
-      id="from"
-      name="from"
-      [(ngModel)]="from"
-      placeholder="Optional..."
-    />
-  </div>
-
-  <div class="form__control">
-    <label for="to">To</label>
-    <input
-      type="text"
-      id="to"
-      name="to"
-      [(ngModel)]="to"
-      placeholder="Optional..."
-    />
-  </div>
-
-  <div class="form__control">
-    <label for="price">Price</label>
-    <input
-      type="number"
-      id="price"
-      name="price"
-      [(ngModel)]="price"
-      min="0"
-      max="1000000"
-    />
-  </div>
-
-  <div class="form__control">
-    <label for="numOfPpl">Number of People</label>
-    <input
-      type="number"
-      id="numOfPpl"
-      name="numOfPpl"
-      [(ngModel)]="numOfPpl"
-      min="1"
-      max="1000"
-    />
-  </div>
-
-  <div class="form__control">
-    <label for="notes">Notes</label>
-    <input
-      type="text"
-      id="notes"
-      name="notes"
-      [(ngModel)]="notes"
-      placeholder="Optional..."
-    />
-  </div>
-
-  <input type="submit" value="Save activity" class="btn btn-block" />
-</form>
-<!-- <h2 mat-dialog-title>Activity Form</h2>
-<form
-  mat-dialog-content
-  (ngSubmit)="isEditingExistingActivity ? onSubmitEdited() : onSubmit()"
->
-  <mat-dialog-content>Hi {{ data.name }}</mat-dialog-content>
-   <mat-form-field>
+  <h2 class="form__title align-self-center">Form</h2>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
     <input
       matInput
       placeholder="Name"
@@ -88,9 +13,12 @@
       name="name"
       maxlength="30"
       placeholder="Required..."
+      required
     />
+    <mat-error>Name of activity is reuiqred!</mat-error>
   </mat-form-field>
   <mat-form-field>
+    <mat-label>From</mat-label>
     <input
       matInput
       placeholder="From"
@@ -100,6 +28,7 @@
     />
   </mat-form-field>
   <mat-form-field>
+    <mat-label>To</mat-label>
     <input
       matInput
       placeholder="To"
@@ -109,6 +38,7 @@
     />
   </mat-form-field>
   <mat-form-field>
+    <mat-label>Price</mat-label>
     <input
       matInput
       placeholder="Price"
@@ -119,6 +49,7 @@
     />
   </mat-form-field>
   <mat-form-field>
+    <mat-label>People</mat-label>
     <input
       matInput
       placeholder="Number of People"
@@ -129,6 +60,7 @@
     />
   </mat-form-field>
   <mat-form-field>
+    <mat-label>Notes</mat-label>
     <input
       matInput
       placeholder="Notes"
@@ -137,8 +69,5 @@
       placeholder="Optional..."
     />
   </mat-form-field>
-  <mat-dialog-actions>
-    <button mat-button mat-dialog-close mat-dialog-close="false">Cancel</button>
-    <button mat-button mat-dialog-close [mat-dialog-close]="true">Save</button>
-  </mat-dialog-actions>
-</form> -->
+  <button type="submit" mat-raised-button color="primary">Save</button>
+</form>

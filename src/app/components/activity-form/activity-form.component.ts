@@ -6,12 +6,10 @@ import {
   Input,
   OnChanges,
   SimpleChanges,
-  Inject,
 } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Activity } from 'src/app/ActivityTypes';
 import { UiService } from 'src/app/services/ui.service';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-activity-form',
@@ -62,7 +60,6 @@ export class ActivityFormComponent implements OnInit, OnChanges {
 
   onSubmitEdited() {
     if (!this.name) {
-      alert('Please add an activity');
       return;
     }
 
@@ -90,7 +87,6 @@ export class ActivityFormComponent implements OnInit, OnChanges {
 
   onSubmit() {
     if (!this.name) {
-      alert('Please add an activity');
       return;
     }
 
