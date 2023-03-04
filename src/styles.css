@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+:root {
+  --custom-var-primary: #3f51b5;
+}
 
 /* Box sizing rules */
 *,
@@ -39,7 +41,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: "Poppins", sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 /* A elements that don't have a class get default styles */
@@ -83,29 +85,22 @@ picture {
   overflow: auto;
 }
 
-.btn {
-  display: inline-block;
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 1rem 2rem;
-  margin: 2rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: inherit;
+.flex {
+  display: flex;
 }
 
-.btn:focus {
-  outline: none;
+.flex-column {
+  flex-direction: column;
 }
 
-.btn:active {
-  transform: scale(0.98);
+.justify-around {
+  justify-content: space-around;
 }
 
-.btn-block {
-  display: block;
-  width: 100%;
+.justify-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
 }

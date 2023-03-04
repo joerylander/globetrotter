@@ -1,5 +1,5 @@
 .main {
-  min-height: calc(100vh - 32rem);
+  min-height: calc(100vh - 36rem);
   margin: 3rem;
   display: flex;
   flex-direction: column;

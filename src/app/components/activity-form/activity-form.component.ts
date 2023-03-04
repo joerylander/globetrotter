@@ -6,10 +6,12 @@ import {
   Input,
   OnChanges,
   SimpleChanges,
+  Inject,
 } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Activity } from 'src/app/ActivityTypes';
 import { UiService } from 'src/app/services/ui.service';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-activity-form',
