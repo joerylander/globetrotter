@@ -21,7 +21,7 @@
     },
     {
       "id": 3,
-      "name": "zzz",
+      "name": "zzzxx",
       "from": "16:00",
       "to": "18:00",
       "price": 300,
@@ -51,6 +51,33 @@
       "price": 200,
       "numOfPpl": 2,
       "notes": "nej"
+    },
+    {
+      "name": "Hello Edwina",
+      "price": 0,
+      "numOfPpl": 1,
+      "id": 7
+    },
+    {
+      "name": "testtest",
+      "price": 0,
+      "numOfPpl": 1,
+      "id": 8
+    },
+    {
+      "name": "this is a test",
+      "from": "1",
+      "to": "2",
+      "price": "30",
+      "numOfPpl": "20",
+      "notes": "ntoes",
+      "id": 9
+    },
+    {
+      "name": "fss",
+      "price": 0,
+      "numOfPpl": 1,
+      "id": 10
     }
   ]
 }
