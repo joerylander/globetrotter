@@ -1,9 +1,4 @@
-.header {
+.mat-toolbar {
   height: 20rem;
-  width: 100%;
-  background-color: steelblue;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }

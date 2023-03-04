@@ -81,7 +81,19 @@ picture {
   overflow: auto;
 }
 
-.btn {
+.flex {
+  display: flex;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+/* .btn {
   display: inline-block;
   background: #000;
   color: #fff;
@@ -106,4 +118,4 @@ picture {
 .btn-block {
   display: block;
   width: 100%;
-}
+} */

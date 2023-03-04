@@ -1,6 +1,6 @@
 <button
-  [ngStyle]="{ 'background-color': color }"
-  class="btn"
+  [ngStyle]="{ 'background-color': bgColor, color: color }"
+  mat-raised-button
   (click)="onClick()"
 >
   {{ text }}
