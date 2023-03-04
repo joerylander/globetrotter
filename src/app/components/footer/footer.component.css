@@ -1,8 +1,7 @@
 .footer {
   width: 100%;
-  background-color: steelblue;
+  background-color: var(--custom-var-primary);
   height: 10rem;
-  display: flex;
-  justify-content: center;
+  margin-top: 3rem;
   align-items: center;
 }

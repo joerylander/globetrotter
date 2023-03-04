@@ -15,11 +15,7 @@ export class HeaderComponent implements OnInit {
   showActivityForm: boolean;
   subscription: Subscription;
 
-  constructor(
-    private uiService: UiService,
-    private router: Router,
-    public dialog: MatDialog
-  ) {
+  constructor(private uiService: UiService, private router: Router) {
     this.subscription = this.uiService
       .onToggleActivityForm()
       .subscribe((value) => (this.showActivityForm = value));
@@ -31,18 +27,18 @@ export class HeaderComponent implements OnInit {
     this.uiService.toggleActivityForm();
   }
 
-  openFormDialog() {
-    let dialogRef = this.dialog.open(ActivityFormComponent, {
-      data: { name: 'Joe' },
-    });
+  // openFormDialog() {
+  //   let dialogRef = this.dialog.open(ActivityFormComponent, {
+  //     data: { name: 'Joe' },
+  //   });
 
-    dialogRef.afterClosed().subscribe((result) => {
-      console.log(`Dialog result: ${result}`);
-    });
+  //   dialogRef.afterClosed().subscribe((result) => {
+  //     console.log(`Dialog result: ${result}`);
+  //   });
 
-    // if result == true, then add activity to list
-    // if result == false, then do nothing
-  }
+  //   // if result == true, then add activity to list
+  //   // if result == false, then do nothing
+  // }
 
   hasRoute(route: string) {
     return this.router.url === route;

@@ -1,3 +1,7 @@
+:root {
+  --custom-var-primary: #3f51b5;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -85,37 +89,18 @@ picture {
   display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .align-items-center {
   align-items: center;
 }
-
-/* .btn {
-  display: inline-block;
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 1rem 2rem;
-  margin: 2rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: inherit;
-}
-
-.btn:focus {
-  outline: none;
-}
-
-.btn:active {
-  transform: scale(0.98);
-}
-
-.btn-block {
-  display: block;
-  width: 100%;
-} */

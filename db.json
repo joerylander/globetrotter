@@ -51,27 +51,6 @@
       "price": 200,
       "numOfPpl": 2,
       "notes": "nej"
-    },
-    {
-      "name": "3r51dsgfds",
-      "from": "",
-      "to": "",
-      "price": 0,
-      "numOfPpl": 1,
-      "notes": "",
-      "id": 7
-    },
-    {
-      "name": "33",
-      "price": 0,
-      "numOfPpl": 1,
-      "id": 8
-    },
-    {
-      "name": "sss",
-      "price": 0,
-      "numOfPpl": 1,
-      "id": 9
     }
   ]
 }

@@ -35,11 +35,7 @@ export class ActivityFormComponent implements OnInit, OnChanges {
   showActivityForm: boolean;
   subscription: Subscription;
 
-  constructor(
-    private uiService: UiService,
-    public dialogRef: MatDialogRef<ActivityFormComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any
-  ) {
+  constructor(private uiService: UiService) {
     this.subscription = this.uiService
       .onToggleActivityForm()
       .subscribe((value) => (this.showActivityForm = value));
