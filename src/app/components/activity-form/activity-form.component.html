@@ -1,4 +1,4 @@
-<form
+<!-- <form
   *ngIf="showActivityForm"
   class="form__container"
   (ngSubmit)="isEditingExistingActivity ? onSubmitEdited() : onSubmit()"
@@ -73,4 +73,72 @@
   </div>
 
   <input type="submit" value="Save activity" class="btn btn-block" />
+</form> -->
+<h2 mat-dialog-title>Activity Form</h2>
+<form
+  mat-dialog-content
+  (ngSubmit)="isEditingExistingActivity ? onSubmitEdited() : onSubmit()"
+>
+  <mat-dialog-content>Hi {{ data.name }}</mat-dialog-content>
+  <!-- <mat-form-field>
+    <input
+      matInput
+      placeholder="Name"
+      [(ngModel)]="name"
+      name="name"
+      maxlength="30"
+      placeholder="Required..."
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="From"
+      [(ngModel)]="from"
+      name="from"
+      placeholder="Optional..."
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="To"
+      [(ngModel)]="to"
+      name="to"
+      placeholder="Optional..."
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="Price"
+      [(ngModel)]="price"
+      name="price"
+      min="0"
+      max="1000000"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="Number of People"
+      [(ngModel)]="numOfPpl"
+      name="numOfPpl"
+      min="1"
+      max="1000"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="Notes"
+      [(ngModel)]="notes"
+      name="notes"
+      placeholder="Optional..."
+    />
+  </mat-form-field> -->
+  <mat-dialog-actions>
+    <button mat-button mat-dialog-close mat-dialog-close="false">Cancel</button>
+    <button mat-button mat-dialog-close [mat-dialog-close]="true">Save</button>
+  </mat-dialog-actions>
 </form>

@@ -6,10 +6,12 @@ import {
   Input,
   OnChanges,
   SimpleChanges,
+  Inject,
 } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Activity } from 'src/app/ActivityTypes';
 import { UiService } from 'src/app/services/ui.service';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-activity-form',
@@ -33,7 +35,11 @@ export class ActivityFormComponent implements OnInit, OnChanges {
   showActivityForm: boolean;
   subscription: Subscription;
 
-  constructor(private uiService: UiService) {
+  constructor(
+    private uiService: UiService,
+    public dialogRef: MatDialogRef<ActivityFormComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any
+  ) {
     this.subscription = this.uiService
       .onToggleActivityForm()
       .subscribe((value) => (this.showActivityForm = value));
