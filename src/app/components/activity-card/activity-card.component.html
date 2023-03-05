@@ -1,37 +1,26 @@
-<article class="activity__card">
-  <div class="activity__header">
-    <h2 class="activity__name">{{ activity.name }}</h2>
-    <div class="activity__header--icons">
-      <fa-icon
-        (click)="editForm(activity)"
-        [ngStyle]="{ cursor: 'pointer' }"
-        [icon]="faPenToSquare"
-      ></fa-icon>
-      <fa-icon
-        (click)="onDelete(activity)"
-        [ngStyle]="{ color: 'red', cursor: 'pointer' }"
-        [icon]="faTimes"
-      ></fa-icon>
+<mat-card class="card-container flex justify-center">
+  <mat-card-header class="align-self-center">
+    <mat-card-title class="card__title">{{ activity.name }}</mat-card-title>
+    <mat-card-subtitle
+      >{{ activity.from }} - {{ activity.to }}</mat-card-subtitle
+    >
+  </mat-card-header>
+  <mat-card-content>
+    <div class="flex justify-between card__text-wrapper">
+      <p class="align-self-start">Price &nbsp;</p>
+      <p>€{{ activity.price }}</p>
     </div>
-  </div>
-  <div class="activity__item">
-    <p class="activity__item--text">From</p>
-    <p class="activity__item--text">{{ activity.from }}</p>
-  </div>
-  <div class="activity__item">
-    <p class="activity__item--text">To</p>
-    <p class="activity__item--text">{{ activity.to }}</p>
-  </div>
-  <div class="activity__item">
-    <p class="activity__item--text">Price</p>
-    <p class="activity__item--text">€{{ activity.price }}</p>
-  </div>
-  <div class="activity__item">
-    <p class="activity__item--text">People</p>
-    <p class="activity__item--text">{{ activity.numOfPpl }}</p>
-  </div>
-  <div class="activity__item">
-    <p class="activity__item--text">Notes</p>
-    <p class="activity__item--text">{{ activity.notes }}</p>
-  </div>
-</article>
+    <div class="flex justify-between card__text-wrapper">
+      <p class="align-self-start">People &nbsp;</p>
+      <p>{{ activity.numOfPpl }}</p>
+    </div>
+    <div class="flex justify-between card__text-wrapper">
+      <p class="align-self-start">Notes &nbsp;</p>
+      <p>{{ activity.notes }}</p>
+    </div>
+  </mat-card-content>
+  <mat-card-actions class="flex justify-evenly">
+    <button mat-button (click)="onEdit(activity)">Edit</button>
+    <button mat-button (click)="onDelete(activity)">Delete</button>
+  </mat-card-actions>
+</mat-card>

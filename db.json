@@ -1,18 +1,8 @@
 {
   "activities": [
     {
-      "id": 1,
-      "name": "snowboarding in the alps",
-      "from": "14:00",
-      "to": "17:00",
-      "price": 100,
-      "complete": false,
-      "notes": "snowboarding",
-      "numOfPpl": 3
-    },
-    {
       "id": 2,
-      "name": "lkdsngksndgldsgasfzzzzzzzzzz",
+      "name": "iamchanged",
       "from": "16:00",
       "to": "18:00",
       "price": 300,
@@ -29,55 +19,85 @@
       "notes": ""
     },
     {
-      "id": 4,
-      "name": "aaaaaafsdafdsaf",
+      "name": "111111111111111111111111111111",
       "price": 0,
-      "numOfPpl": 1
+      "numOfPpl": 1,
+      "id": 5
     },
     {
-      "id": 5,
-      "name": "sssssssssssss",
-      "from": "xxxxxxxx",
+      "name": "1222",
+      "price": 0,
+      "numOfPpl": 1,
+      "id": 6
+    },
+    {
+      "name": "34321",
+      "from": "",
       "to": "",
       "price": 0,
       "numOfPpl": 1,
-      "notes": ""
-    },
-    {
-      "id": 6,
-      "name": "hejhejeh",
-      "from": "idag",
-      "to": "imorgon",
-      "price": 200,
-      "numOfPpl": 2,
-      "notes": "nej"
-    },
-    {
-      "name": "Hello Edwina",
-      "price": 0,
-      "numOfPpl": 1,
+      "notes": "",
       "id": 7
     },
     {
-      "name": "testtest",
+      "name": "325325",
+      "from": "",
+      "to": "",
       "price": 0,
       "numOfPpl": 1,
+      "notes": "",
       "id": 8
     },
     {
-      "name": "this is a test",
-      "from": "1",
-      "to": "2",
-      "price": "30",
-      "numOfPpl": "20",
-      "notes": "ntoes",
+      "name": "5135315",
+      "from": "",
+      "to": "",
+      "price": 0,
+      "numOfPpl": 1,
+      "notes": "",
       "id": 9
     },
     {
-      "name": "fss",
+      "name": "hejj",
       "price": 0,
       "numOfPpl": 1,
       "id": 10
+    },
+    {
+      "name": "testetesttest",
+      "price": 0,
+      "numOfPpl": 1,
+      "id": 11
+    },
+    {
+      "name": "testetest",
+      "from": "",
+      "to": "",
+      "price": 0,
+      "numOfPpl": 1,
+      "notes": "",
+      "id": 12
+    },
+    {
+      "name": "ssss",
+      "from": "",
+      "to": "",
+      "price": 0,
+      "numOfPpl": 1,
+      "notes": "",
+      "id": 13
+    },
+    {
+      "name": "asss",
+      "price": 0,
+      "numOfPpl": 1,
+      "id": 14
+    },
+    {
+      "name": "braaaa",
+      "price": 0,
+      "numOfPpl": 1,
+      "id": 15
     }
   ]
 }

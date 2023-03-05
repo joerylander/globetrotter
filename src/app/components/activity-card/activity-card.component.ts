@@ -29,7 +29,7 @@ export class ActivityCardComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  editForm(activity: Activity) {
+  onEdit(activity: Activity) {
     this.uiService.onToggleActivityForm();
     this.onEditBtnClick.emit(activity);
   }
