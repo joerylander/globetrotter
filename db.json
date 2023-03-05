@@ -2,102 +2,48 @@
   "activities": [
     {
       "id": 2,
-      "name": "iamchanged",
+      "name": "Snowboarding in the alps",
       "from": "16:00",
-      "to": "18:00",
+      "to": "20:00",
       "price": 300,
       "numOfPpl": 4,
-      "notes": ""
+      "notes": "300 euro per person"
     },
     {
       "id": 3,
-      "name": "zzzxx",
-      "from": "16:00",
-      "to": "18:00",
-      "price": 300,
-      "numOfPpl": 9999,
-      "notes": ""
+      "name": "Visit the Louvre",
+      "from": "12:00",
+      "to": "14:00",
+      "price": "50",
+      "numOfPpl": "2",
+      "notes": "Might be long queue"
     },
     {
-      "name": "111111111111111111111111111111",
-      "price": 0,
-      "numOfPpl": 1,
-      "id": 5
+      "id": 5,
+      "name": "See the Niagra falls",
+      "from": "08:00",
+      "to": "11:00",
+      "price": "60",
+      "numOfPpl": "3",
+      "notes": "2 hour drive from AirBNB"
     },
     {
-      "name": "1222",
+      "id": 6,
+      "name": "Spend the day at the beach ",
+      "from": "08:00",
+      "to": "17:00",
       "price": 0,
-      "numOfPpl": 1,
-      "id": 6
+      "numOfPpl": "4",
+      "notes": "Bali, baby!"
     },
     {
-      "name": "34321",
-      "from": "",
-      "to": "",
-      "price": 0,
-      "numOfPpl": 1,
-      "notes": "",
-      "id": 7
-    },
-    {
-      "name": "325325",
-      "from": "",
-      "to": "",
-      "price": 0,
-      "numOfPpl": 1,
-      "notes": "",
-      "id": 8
-    },
-    {
-      "name": "5135315",
-      "from": "",
-      "to": "",
-      "price": 0,
-      "numOfPpl": 1,
-      "notes": "",
-      "id": 9
-    },
-    {
-      "name": "hejj",
-      "price": 0,
-      "numOfPpl": 1,
-      "id": 10
-    },
-    {
-      "name": "testetesttest",
-      "price": 0,
-      "numOfPpl": 1,
-      "id": 11
-    },
-    {
-      "name": "testetest",
-      "from": "",
-      "to": "",
-      "price": 0,
-      "numOfPpl": 1,
-      "notes": "",
-      "id": 12
-    },
-    {
-      "name": "ssss",
-      "from": "",
-      "to": "",
-      "price": 0,
-      "numOfPpl": 1,
-      "notes": "",
-      "id": 13
-    },
-    {
-      "name": "asss",
-      "price": 0,
-      "numOfPpl": 1,
-      "id": 14
-    },
-    {
-      "name": "braaaa",
-      "price": 0,
-      "numOfPpl": 1,
-      "id": 15
+      "id": 8,
+      "name": "Forest hiking",
+      "from": "10:00",
+      "to": "16:00",
+      "price": "100",
+      "numOfPpl": "2",
+      "notes": "Money for food supplies"
     }
   ]
 }

@@ -19,23 +19,11 @@
   </mat-form-field>
   <mat-form-field>
     <mat-label>From</mat-label>
-    <input
-      matInput
-      placeholder="From"
-      [(ngModel)]="from"
-      name="from"
-      placeholder="Optional..."
-    />
+    <input matInput placeholder="From" [(ngModel)]="from" name="from" />
   </mat-form-field>
   <mat-form-field>
     <mat-label>To</mat-label>
-    <input
-      matInput
-      placeholder="To"
-      [(ngModel)]="to"
-      name="to"
-      placeholder="Optional..."
-    />
+    <input matInput placeholder="To" [(ngModel)]="to" name="to" />
   </mat-form-field>
   <mat-form-field>
     <mat-label>Price</mat-label>
@@ -66,7 +54,7 @@
       placeholder="Notes"
       [(ngModel)]="notes"
       name="notes"
-      placeholder="Optional..."
+      maxlength="30"
     />
   </mat-form-field>
   <button type="submit" mat-raised-button color="primary">Save</button>
