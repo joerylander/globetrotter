@@ -1,37 +1,17 @@
-<article class="activity__card">
-  <div class="activity__header">
-    <h2 class="activity__name">{{ activity.name }}</h2>
-    <div class="activity__header--icons">
-      <fa-icon
-        (click)="editForm(activity)"
-        [ngStyle]="{ cursor: 'pointer' }"
-        [icon]="faPenToSquare"
-      ></fa-icon>
-      <fa-icon
-        (click)="onDelete(activity)"
-        [ngStyle]="{ color: 'red', cursor: 'pointer' }"
-        [icon]="faTimes"
-      ></fa-icon>
-    </div>
-  </div>
-  <div class="activity__item">
-    <p class="activity__item--text">From</p>
-    <p class="activity__item--text">{{ activity.from }}</p>
-  </div>
-  <div class="activity__item">
-    <p class="activity__item--text">To</p>
-    <p class="activity__item--text">{{ activity.to }}</p>
-  </div>
-  <div class="activity__item">
-    <p class="activity__item--text">Price</p>
-    <p class="activity__item--text">€{{ activity.price }}</p>
-  </div>
-  <div class="activity__item">
-    <p class="activity__item--text">People</p>
-    <p class="activity__item--text">{{ activity.numOfPpl }}</p>
-  </div>
-  <div class="activity__item">
-    <p class="activity__item--text">Notes</p>
-    <p class="activity__item--text">{{ activity.notes }}</p>
-  </div>
-</article>
+<mat-card class="card-container">
+  <mat-card-header>
+    <mat-card-title>{{ activity.name }}</mat-card-title>
+    <mat-card-subtitle
+      >{{ activity.from }} - {{ activity.to }}</mat-card-subtitle
+    >
+  </mat-card-header>
+  <mat-card-content>
+    <p>Price: €{{ activity.price }}</p>
+    <p>People: {{ activity.numOfPpl }}</p>
+    <p>Notes: {{ activity.notes }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="onEdit(activity)">Edit</button>
+    <button mat-button (click)="onDelete(activity)">Delete</button>
+  </mat-card-actions>
+</mat-card>
