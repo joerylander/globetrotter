@@ -1,22 +1,49 @@
 {
-  "tasks": [
-    {
-      "id": 1,
-      "text": "Doctors Appointment",
-      "day": "May 5th at 2:30pm",
-      "reminder": true
-    },
+  "activities": [
     {
       "id": 2,
-      "text": "Meeting at School",
-      "day": "May 6th at 2:30pm",
-      "reminder": true
+      "name": "Snowboarding in the alps",
+      "from": "16:00",
+      "to": "20:00",
+      "price": 300,
+      "numOfPpl": 4,
+      "notes": "300 euro per person"
     },
     {
       "id": 3,
-      "text": "Food Shopping",
-      "day": "May 7th at 12:30pm",
-      "reminder": false
+      "name": "Visit the Louvre",
+      "from": "12:00",
+      "to": "14:00",
+      "price": "50",
+      "numOfPpl": "2",
+      "notes": "Might be long queue"
+    },
+    {
+      "id": 5,
+      "name": "See the Niagra falls",
+      "from": "08:00",
+      "to": "11:00",
+      "price": "60",
+      "numOfPpl": "3",
+      "notes": "2 hour drive from AirBNB"
+    },
+    {
+      "id": 6,
+      "name": "Spend the day at the beach ",
+      "from": "08:00",
+      "to": "17:00",
+      "price": 0,
+      "numOfPpl": "4",
+      "notes": "Bali, baby!"
+    },
+    {
+      "id": 8,
+      "name": "Forest hiking",
+      "from": "10:00",
+      "to": "16:00",
+      "price": "100",
+      "numOfPpl": "2",
+      "notes": "Money for food supplies"
     }
   ]
 }

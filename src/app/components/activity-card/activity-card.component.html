@@ -1,0 +1,26 @@
+<mat-card class="card-container flex justify-center">
+  <mat-card-header class="align-self-center">
+    <mat-card-title class="card__title">{{ activity.name }}</mat-card-title>
+    <mat-card-subtitle
+      >{{ activity.from }} - {{ activity.to }}</mat-card-subtitle
+    >
+  </mat-card-header>
+  <mat-card-content>
+    <div class="flex justify-between card__text-wrapper">
+      <p class="align-self-start">Price: &nbsp;</p>
+      <p>€{{ activity.price }}</p>
+    </div>
+    <div class="flex justify-between card__text-wrapper">
+      <p class="align-self-start">People: &nbsp;</p>
+      <p>{{ activity.numOfPpl }}</p>
+    </div>
+    <div class="flex justify-between card__text-wrapper">
+      <p class="align-self-start">Notes: &nbsp;</p>
+      <p class="card__text--notes">{{ activity.notes }}</p>
+    </div>
+  </mat-card-content>
+  <mat-card-actions class="flex justify-evenly">
+    <button mat-button (click)="onEdit(activity)">Edit</button>
+    <button mat-button (click)="onDelete(activity)">Delete</button>
+  </mat-card-actions>
+</mat-card>

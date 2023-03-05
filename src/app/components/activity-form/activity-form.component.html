@@ -1,0 +1,61 @@
+<form
+  *ngIf="showActivityForm"
+  (ngSubmit)="isEditingExistingActivity ? onSubmitEdited() : onSubmit()"
+  class="flex flex-column"
+>
+  <h2 class="form__title align-self-center">Form</h2>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input
+      matInput
+      placeholder="Name"
+      [(ngModel)]="name"
+      name="name"
+      maxlength="30"
+      placeholder="Required..."
+      required
+    />
+    <mat-error>Name of activity is reuiqred!</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>From</mat-label>
+    <input matInput placeholder="From" [(ngModel)]="from" name="from" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>To</mat-label>
+    <input matInput placeholder="To" [(ngModel)]="to" name="to" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Price</mat-label>
+    <input
+      matInput
+      placeholder="Price"
+      [(ngModel)]="price"
+      name="price"
+      min="0"
+      max="1000000"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>People</mat-label>
+    <input
+      matInput
+      placeholder="Number of People"
+      [(ngModel)]="numOfPpl"
+      name="numOfPpl"
+      min="1"
+      max="1000"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Notes</mat-label>
+    <input
+      matInput
+      placeholder="Notes"
+      [(ngModel)]="notes"
+      name="notes"
+      maxlength="30"
+    />
+  </mat-form-field>
+  <button type="submit" mat-raised-button color="primary">Save</button>
+</form>

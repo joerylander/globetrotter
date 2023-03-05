@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+:root {
+  --custom-var-primary: #3f51b5;
+}
 
 /* Box sizing rules */
 *,
@@ -14,7 +16,7 @@
 }
 
 html {
-  font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%; /* 1rem = 1rem */
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -39,7 +41,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: "Lato", sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 /* A elements that don't have a class get default styles */
@@ -75,74 +77,50 @@ picture {
   display: none;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-}
-
 .container {
-  max-width: 500px;
-  margin: 30px auto;
+  height: 100%;
+  width: 100vw;
+  margin: 0 auto;
   overflow: auto;
-  min-height: 300px;
-  border: 1px solid steelblue;
-  padding: 30px;
-  border-radius: 5px;
+  min-height: 30rem;
 }
 
-.btn {
-  display: inline-block;
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: inherit;
-}
-
-.btn:focus {
-  outline: none;
-}
-
-.btn:active {
-  transform: scale(0.98);
-}
-
-.btn-block {
-  display: block;
-  width: 100%;
-}
-
-.form-control {
-  margin: 20px 0;
-}
-
-.form-control label {
-  display: block;
-}
-
-.form-control input {
-  width: 100%;
-  height: 40px;
-  margin: 5px;
-  padding: 3px 7px;
-  font-size: 17px;
-}
-
-.form-control-check {
+.flex {
   display: flex;
-  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-between {
   justify-content: space-between;
 }
 
-.form-control-check label {
-  flex: 1;
+.align-items-center {
+  align-items: center;
 }
 
-.form-control-check input {
-  flex: 2;
-  height: 20px;
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-start {
+  align-self: start;
 }

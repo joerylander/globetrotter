@@ -1,0 +1,36 @@
+.main {
+  min-height: calc(100vh - 36rem);
+  margin: 3rem;
+}
+
+.main__title {
+  margin: 3rem 0;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+
+.main__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+
+@media screen and (max-width: 1280px) {
+  .main__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .main {
+    margin: 0;
+  }
+
+  .main__grid {
+    display: flex;
+    flex-direction: column;
+  }
+}

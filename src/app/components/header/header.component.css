@@ -1,6 +1,10 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
+.mat-toolbar {
+  height: 20rem;
+  margin-bottom: 1rem;
+}
+
+.header__title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 2.4rem;
 }
