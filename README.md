@@ -11,8 +11,8 @@
 
 ## Development
 
-- run "npm run server" first
-- Provides data from local db.json file
+- run "npm install" to install dependencies
+- run "npm run server", provides data from local db.json file
 
 ...
 
